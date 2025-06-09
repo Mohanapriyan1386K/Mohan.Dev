@@ -15,6 +15,8 @@ import {
   ListItemText,
   useTheme,
   useMediaQuery,
+  Divider,
+  Typography,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link, useLocation } from 'react-router-dom';
@@ -22,9 +24,8 @@ import { Link, useLocation } from 'react-router-dom';
 const pages = [
   { name: 'ABOUT', link: '/' },
   { name: 'PROJECT', link: '/Project' },
-  { name: 'SERVICES', link: '/Services' },
+  // { name: 'SERVICES', link: '/Services' },
   { name: 'BLOG', link: '/Blog' },
-  // { name: 'CAREERS', link: '/Carrer' },
   { name: 'CONTACT', link: '/contact' },
 ];
 
@@ -40,23 +41,25 @@ function NavBar() {
 
   return (
     <>
-      <AppBar position="sticky" sx={{ backgroundColor: '#FFFFFF', padding: 1, boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
+      <AppBar position="sticky" elevation={3} sx={{ backgroundColor: '#fff', py: 1.5 }}>
         <Container maxWidth="xl">
-          <Toolbar
-            sx={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              color: 'black',
-            }}
-          >
+          <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
             {/* Logo */}
-            <Box>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <Button component={Link} to="/" sx={{ padding: 0 }}>
-                <img src={images.Logo} alt="Logo" width={150} height={100} />
+                <Box
+                  component="img"
+                  src={images.Logo}
+                  alt="Logo"
+                  sx={{
+                    width: { xs: 120, sm: 150 },
+                    height: 'auto',
+                  }}
+                />
               </Button>
             </Box>
 
-            {/* Desktop Menu */}
+            {/* Desktop Navigation */}
             {!isMobile ? (
               <Box sx={{ display: 'flex', gap: 3, alignItems: 'center' }}>
                 {pages.map((page) => (
@@ -64,16 +67,21 @@ function NavBar() {
                     key={page.name}
                     component={Link}
                     to={page.link}
+                    disableRipple
                     sx={{
-                      fontSize: '13px',
-                      fontWeight: 700,
+                      fontSize: '14px',
+                      fontWeight: 600,
                       fontFamily: 'Poppins',
-                      color: isActive(page.link) ? 'black' : 'gray',
-                      borderBottom: isActive(page.link) ? '2px solid black' : '2px solid transparent',
-                      transition: 'all 0.3s ease',
+                      color: isActive(page.link) ? '#000' : '#666',
+                      borderBottom: isActive(page.link)
+                        ? '2px solid #000'
+                        : '2px solid transparent',
+                      borderRadius: 0,
+                      paddingBottom: '6px',
+                      transition: 'all 0.3s ease-in-out',
                       '&:hover': {
-                        color: 'black',
-                        borderBottom: '2px solid black',
+                        color: '#000',
+                        borderBottom: '2px solid #000',
                         backgroundColor: 'transparent',
                       },
                     }}
@@ -83,9 +91,8 @@ function NavBar() {
                 ))}
               </Box>
             ) : (
-              // Mobile Menu Icon
               <IconButton edge="end" onClick={handleDrawerToggle}>
-                <MenuIcon sx={{ color: 'black' }} />
+                <MenuIcon sx={{ color: 'black', fontSize: '28px' }} />
               </IconButton>
             )}
           </Toolbar>
@@ -94,7 +101,31 @@ function NavBar() {
 
       {/* Mobile Drawer */}
       <Drawer anchor="right" open={drawerOpen} onClose={handleDrawerToggle}>
-        <Box sx={{ width: 250 }} onClick={handleDrawerToggle}>
+        <Box
+          sx={{
+            width: 260,
+            display: 'flex',
+            flexDirection: 'column',
+            height: '100%',
+            p: 2,
+            bgcolor: '#fff',
+          }}
+          role="presentation"
+          onClick={handleDrawerToggle}
+        >
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: 'Poppins',
+              fontWeight: 700,
+              mb: 2,
+              color: '#000',
+              textAlign: 'center',
+            }}
+          >
+            MENU
+          </Typography>
+          <Divider />
           <List>
             {pages.map((page) => (
               <ListItem key={page.name} disablePadding>
@@ -103,11 +134,12 @@ function NavBar() {
                   to={page.link}
                   selected={isActive(page.link)}
                   sx={{
+                    px: 2,
                     '&.Mui-selected': {
-                      backgroundColor: '#f0f0f0',
+                      backgroundColor: '#f5f5f5',
                     },
                     '&:hover': {
-                      backgroundColor: '#e0e0e0',
+                      backgroundColor: '#eee',
                     },
                   }}
                 >
@@ -117,7 +149,7 @@ function NavBar() {
                       fontFamily: 'Poppins',
                       fontWeight: 600,
                       fontSize: '14px',
-                      color: isActive(page.link) ? 'black' : 'gray',
+                      color: isActive(page.link) ? '#000' : '#555',
                     }}
                   />
                 </ListItemButton>
