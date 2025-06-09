@@ -19,7 +19,7 @@ const projects = [
     title: "Chatbot Assistant",
     description: "AI chatbot using OpenAI API with speech-to-text and voice support.",
     image: Tickpick,
-    previewLink: "https://chatbot-app.vercel.app",
+    previewLink: "https://finaltickapi-2pnysrrx2mapxmgmppenkh.streamlit.app/",
     githubLink: "https://github.com/Mohanapriyan6559/finaltickapi"
   },
   {
