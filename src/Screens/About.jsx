@@ -100,7 +100,17 @@ function About() {
                 >
                   HIRE ME
                 </button>
-                <button className="bg-black text-white hover:bg-red-500 px-6 py-2 rounded-[10px] cursor-pointer hover:scale-105 transition font-bold w-full sm:w-auto">
+                <button
+                  onClick={() => {
+                    const link = document.createElement("a");
+                    link.href = "/cv.pdf";
+                    link.download = "MohanaPriyan_CV.pdf";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                  className="bg-black text-white hover:bg-red-500 px-6 py-2 rounded-[10px] cursor-pointer hover:scale-105 transition font-bold w-full sm:w-auto"
+                >
                   DOWNLOAD CV
                 </button>
               </div>
