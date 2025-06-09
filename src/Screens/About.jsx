@@ -48,7 +48,7 @@ function About() {
           {/* Content Layer */}
           <div className="relative z-10 flex flex-col md:flex-row justify-center items-center gap-10 px-4 sm:px-6 lg:px-16 py-12">
             {/* Tilted Card */}
-            <div className="w-full sm:w-auto flex justify-center">
+            <div className=" hidden md:block   w-full sm:w-auto  justify-center">
               <TiltedCard
                 backgroundDesign={images.backgroudprofile}
                 imageSrc={images.profile}
@@ -74,7 +74,7 @@ function About() {
                 animateBy="words"
                 direction="top"
                 onAnimationComplete={handleAnimationComplete}
-                className="text-3xl sm:text-4xl font-bold mb-3"
+                className="text-[20px] sm:text-2xl font-bold mb-3"
               />
 
               <TrueFocus
@@ -190,7 +190,7 @@ function About() {
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       >
-        <div className="px-4 sm:px-6 lg:px-20 py-8">
+        <div className="">
           <InfiniteImageScroll />
         </div>
       </motion.div>

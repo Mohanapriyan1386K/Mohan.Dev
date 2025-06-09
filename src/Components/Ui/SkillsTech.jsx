@@ -11,29 +11,29 @@ function SkillsTech() {
     {
       title: "Languages",
       icon: <Code style={{ fontSize: 40, color: "#2e7d32" }} />,
-      items: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"],
+      items: ["HTML5", "CSS3", "JavaScript (ES6+)"],
     },
     {
       title: "Frameworks",
       icon: <Build style={{ fontSize: 40, color: "#0288d1" }} />,
-      items: ["React", "Next.js", "Vue (optional)"],
+      items: ["React", "Next.js",],
     },
     {
       title: "Styling",
       icon: <Brush style={{ fontSize: 40, color: "#d81b60" }} />,
-      items: ["Tailwind CSS", "Sass", "Styled Components"],
+      items: ["Tailwind CSS", "Sass","MaterialUi", "Styled Components"],
     },
     {
       title: "Tools",
       icon: <Settings style={{ fontSize: 40, color: "#f57c00" }} />,
-      items: ["Git", "Figma", "Vite", "Webpack", "VS Code"],
+      items: ["Git", "Figma", "Vite", "VS Code"],
     },
     {
       title: "Other",
       icon: (
         <IntegrationInstructions style={{ fontSize: 40, color: "#8e24aa" }} />
       ),
-      items: ["API integration", "REST", "GraphQL basics"],
+      items: ["API integration", "REST","Redux"],
     },
   ];
 

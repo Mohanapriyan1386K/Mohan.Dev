@@ -27,7 +27,7 @@ function Blog() {
               <p className="text-gray-700">{blog.content}</p>
               <button
                 onClick={() => navigate(`/blogs/${blog.id}`)}
-                className="mt-4 text-blue-600 hover:underline"
+                className="mt-4 text-blue-600 hover:underline cursor-pointer"
               >
                 Read More →
               </button>

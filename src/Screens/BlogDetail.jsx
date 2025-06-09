@@ -12,7 +12,7 @@ function BlogDetail() {
   }
 
   return (
-    <div className="p-6 mt-[1px] min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
+    <div className="p-6 mt-[1px] min-h-screen bg-white  text-gray-800">
       <button onClick={() => navigate(-1)} className="text-blue-500 mb-4">
         ← Back
       </button>
@@ -20,7 +20,7 @@ function BlogDetail() {
       <img
         src={blog.imgurl}
         alt={blog.title}
-        className="w-full h-64 object-top rounded-lg mb-4"
+        className="w-full h-80 object-contain  rounded-lg mb-4"
       />
       <p className="text-lg leading-7">{blog.fullContent}</p>
     </div>
