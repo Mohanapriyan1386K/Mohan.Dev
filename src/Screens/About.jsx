@@ -101,7 +101,7 @@ function About() {
                   HIRE ME
                 </button>
                 <button  className="bg-black text-white hover:bg-red-500 px-6 py-2 rounded-[10px] cursor-pointer hover:scale-105 transition font-bold w-full sm:w-auto">
-                  <a href="https://drive.google.com/file/d/16M7QgbGuYz7UjWUIg-sYb35s6njpFpd-/view?usp=drive_link">DOWNLOAD CV</a>
+                  <a href="https://drive.google.com/file/d/16M7QgbGuYz7UjWUIg-sYb35s6njpFpd-/view?usp=drive_link" target="_blank" >DOWNLOAD CV</a>
                 </button>
               </div>
             </div>
