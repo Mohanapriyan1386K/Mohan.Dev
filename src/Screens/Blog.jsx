@@ -7,7 +7,7 @@ function Blog() {
   const navigate = useNavigate();
 
   return (
-    <div className="p-6  min-h-screen">
+    <div className="p-6 ">
       <Container>
         <h2 className="text-3xl font-bold mb-6 text-center text-black">
           Latest Blogs
