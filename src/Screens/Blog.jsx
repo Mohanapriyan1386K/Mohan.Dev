@@ -13,11 +13,11 @@ function Blog() {
         <title>Blog | Mohana Priyan - Frontend Development Insights</title>
         <meta
           name="description"
-          content="Read web development blogs by Mohana Priyan covering React.js, TypeScript, Tailwind CSS, JavaScript tips, UI design, and frontend trends."
+          content="Read web development blogs by Mohana Priyan covering React.js, TypeScript, Tailwind CSS, JavaScript tips, UI design, and frontend trends,Mohanapriyan frontend developer"
         />
         <meta
           name="keywords"
-          content="Frontend Blog, Web Development Blog, React Articles, JavaScript Tips, TypeScript Tutorials, UI/UX Design, Mohana Priyan Blog"
+          content="Frontend Blog, Web Development Blog, React Articles, JavaScript Tips, TypeScript Tutorials, UI/UX Design, MohanaPriyanBlog  Mohanapriyan frontend developer"
         />
         <meta name="robots" content="index, follow" />
       </Helmet>

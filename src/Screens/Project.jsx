@@ -51,7 +51,7 @@ const Project = () => {
         />
         <meta
           name="keywords"
-          content="Mohana Priyan Projects, React Projects, Web Developer Projects, Frontend Development, Tailwind CSS, JavaScript Portfolio, TypeScript Projects"
+          content="Mohana Priyan Projects, React Projects, Web Developer Projects, Frontend Development, Tailwind CSS, JavaScript Portfolio, TypeScript Projects,Mohanapriyan frontend developer"
         />
         <meta name="robots" content="index, follow" />
       </Helmet>

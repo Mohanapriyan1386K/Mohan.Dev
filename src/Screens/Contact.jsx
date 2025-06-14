@@ -42,11 +42,11 @@ const Contact = () => {
         <title>Contact | Get in Touch with Mohana Priyan</title>
         <meta
           name="description"
-          content="Interested in working together? Reach out to Mohana Priyan, a frontend developer specializing in responsive and interactive web applications."
+          content="Mohanapriyan frontend developer,Interested in working together? Reach out to Mohana Priyan, a frontend developer specializing in responsive and interactive web applications."
         />
         <meta
           name="keywords"
-          content="Contact Mohana Priyan, Hire Frontend Developer, Web Developer Contact, React Developer India, Freelance Developer"
+          content=",Mohanapriyan frontend developer,Contact Mohana Priyan, Hire Frontend Developer, Web Developer Contact, React Developer India, Freelance Developer"
         />
         <meta name="robots" content="index, follow" />
       </Helmet>

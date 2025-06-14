@@ -27,11 +27,11 @@ function About() {
         <title>About | Mohana Priyan - Frontend Developer</title>
         <meta
           name="description"
-          content="I'm Mohana Priyan, a dedicated Frontend Developer with expertise in React.js, JavaScript, HTML, CSS, and UI/UX design. Learn more about my journey and skills."
+          content="Mohanapriyan frontend developer,I'm Mohana Priyan, a dedicated Frontend Developer with expertise in React.js, JavaScript, HTML, CSS, and UI/UX design. Learn more about my journey and skills."
         />
         <meta
           name="keywords"
-          content="About Mohana Priyan, Frontend Developer, React Developer, JavaScript Developer, Web Designer, UI Developer, Tailwind CSS, MERN Stack"
+          content="Mohanapriyan frontend developer,About Mohana Priyan, Frontend Developer, React Developer, JavaScript Developer, Web Designer, UI Developer, Tailwind CSS, MERN Stack"
         />
         <meta name="author" content="Mohana Priyan" />
         <meta name="robots" content="index, follow" />
