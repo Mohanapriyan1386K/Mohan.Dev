@@ -26,7 +26,7 @@ function About() {
     <>
       <Helmet>
   {/* Page Title */}
-  <title>KS MohanaDev</title>
+  <title> About-KS-MohanaDev</title>
 
   {/* Meta Description */}
   <meta

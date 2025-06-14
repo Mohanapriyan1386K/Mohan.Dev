@@ -11,7 +11,7 @@ function Blog() {
     <>
       <Helmet>
         {/* Page Title */}
-        <title>KS MohanaDev-Frontenddeveloper</title>
+        <title>Blog-MohanaDev-Frontenddeveloper</title>
 
         {/* Meta Description */}
         <meta
