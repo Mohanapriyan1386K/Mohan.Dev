@@ -44,7 +44,7 @@ const Project = () => {
   return (
     <>
     <Helmet>
-        <title>About | Mohana Priyan - Frontend Developer</title>
+        <title>Project|KS MohanaDev-Frontenddeveloper</title>
         <meta
           name="description"
           content="I’m Mohana Priyan, a passionate frontend developer creating responsive and interactive web applications using React, Tailwind CSS, TypeScript, and more."
