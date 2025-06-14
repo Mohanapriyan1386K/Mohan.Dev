@@ -3,6 +3,7 @@ import { Container } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import blogData from "../Utility/blogData"; // Adjust the path if needed
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 function Blog() {
   const navigate = useNavigate();
 

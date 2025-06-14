@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import blogData from "../Utility/blogData"; // Adjust the path if needed
+import { Helmet } from "react-helmet";
 
 function BlogDetail() {
   const { id } = useParams();

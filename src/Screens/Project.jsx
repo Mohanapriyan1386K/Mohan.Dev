@@ -5,6 +5,7 @@ import clincbuy from "../assets/Projects/clinibuy.png"
 import Tickpick from "../assets/Projects/Tickpick.png"
 import Airlinens from "../assets/Projects/Airlines.png"
 import Agroly from  "../assets/Projects/Agroly.png"
+import { Helmet } from "react-helmet";
 
 
 const projects = [
