@@ -10,7 +10,7 @@ const Footer = () => {
         {/* About Section */}
         <div>
           <h2 className="text-xl font-semibold text-white mb-4">About Me</h2>
-          <p className="text-sm">
+          <p className="text-sm leading-6 tracking-wide">
             I’m a passionate web developer focused on building user-friendly, responsive websites and creative digital experiences.
           </p>
         </div>
@@ -18,12 +18,12 @@ const Footer = () => {
         {/* Quick Links */}
         <div>
         <h2 className="text-xl font-semibold text-white mb-4">Quick Links</h2>
-        <ul className="space-y-2 text-sm">
+        <ul className="flex items-start gap-2 flex-col text-sm">
             <li><Link to="/" className="hover:text-white transition">About</Link></li>
             <li><Link to="/Project" className="hover:text-white transition">Projects</Link></li>
             <li><Link to="/Services" className="hover:text-white transition">Services</Link></li>
-            <li><Link to="/Blog" className="hover:text-white transition">Blog</Link></li>
-            <li><Link to="/Casestudies" className="hover:text-white transition">Case Studies</Link></li>
+            {/* <li><Link to="/Blog" className="hover:text-white transition">Blog</Link></li>
+            <li><Link to="/Casestudies" className="hover:text-white transition">Case Studies</Link></li> */}
             <li><Link to="/contact" className="hover:text-white transition">Contact</Link></li>
         </ul>
         </div>

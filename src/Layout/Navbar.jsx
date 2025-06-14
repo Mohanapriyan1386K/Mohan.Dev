@@ -41,7 +41,7 @@ function NavBar() {
 
   return (
     <>
-      <AppBar position="sticky" elevation={3} sx={{ backgroundColor: '#fff', py: 1.5 }}>
+      <AppBar position="sticky" elevation={3} sx={{ backgroundColor: '#fff', py: 0 }}>
         <Container maxWidth="xl">
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
             {/* Logo */}
