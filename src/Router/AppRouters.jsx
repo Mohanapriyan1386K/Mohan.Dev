@@ -16,7 +16,7 @@ const router = createHashRouter([
     path: '/',
     element: <Maninlayout/>,
     children: [
-      {index: true, element: <About/> },
+      {index:true,path:"/", element: <About/> },
       {path:"Project",element:<Project/>},
       {path:"Services",element:<Services/>},
       {path:'Blog',element:<Blog/>},
