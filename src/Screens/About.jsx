@@ -27,7 +27,7 @@ function About() {
         <title>About | Mohana Priyan - Frontend Developer</title>
         <meta
           name="description"
-          content="Mohanapriyan frontend developer,I'm Mohana Priyan, a dedicated Frontend Developer with expertise in React.js, JavaScript, HTML, CSS, and UI/UX design. Learn more about my journey and skills."
+          content=",I'm Mohana Priyan, a dedicated Frontend Developer with expertise in React.js, JavaScript, HTML, CSS, and UI/UX design. Learn more about my journey and skills."
         />
         <meta
           name="keywords"
@@ -83,14 +83,17 @@ function About() {
 
               {/* Text Section */}
               <div className="max-w-2xl text-center md:text-left px-2">
-                <BlurText
-                  text="I AM MOHANA PRIYAN"
-                  delay={150}
-                  animateBy="words"
-                  direction="top"
-                  onAnimationComplete={handleAnimationComplete}
-                  className="text-[20px] sm:text-2xl font-bold mb-3"
-                />
+                {/* <h1>
+                  <BlurText
+                    text="I AM MOHANA PRIYAN"
+                    delay={150}
+                    animateBy="words"
+                    direction="top"
+                    onAnimationComplete={handleAnimationComplete}
+                    className="text-[20px] sm:text-2xl font-bold mb-3"
+                  />
+                </h1> */}
+                <h1 className="text-3xl  font-bold">I AM MOHANA PRIYAN K</h1>
 
                 <TrueFocus
                   sentence="FRONT END DEVELOPER"

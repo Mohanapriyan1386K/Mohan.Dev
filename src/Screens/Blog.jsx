@@ -24,9 +24,9 @@ function Blog() {
 
       <div className="p-6 ">
         <Container>
-          <h2 className="text-3xl font-bold mb-6 text-center text-black">
+          <h1 className="text-3xl font-bold mb-6 text-center text-black">
             Latest Blogs
-          </h2>
+          </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             {blogData.map((blog, index) => (
               <motion.div

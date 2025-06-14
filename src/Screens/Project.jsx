@@ -57,7 +57,7 @@ const Project = () => {
       </Helmet>
 
       <section className="py-16 px-6 text-black" id="projects">
-        <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
+        <h1 className="text-3xl font-bold text-center mb-12">My Projects</h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <motion.div

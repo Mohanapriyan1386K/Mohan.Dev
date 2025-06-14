@@ -17,7 +17,7 @@ function BlogDetail() {
       <button onClick={() => navigate(-1)} className="text-blue-500 mb-4">
         ← Back
       </button>
-      <h1 className="text-3xl font-bold mb-4">{blog.title}</h1>
+      <h1 className="text-3xl font-bold mb-4 text-center">{blog.title}</h1>
       <img
         src={blog.imgurl}
         alt={blog.title}

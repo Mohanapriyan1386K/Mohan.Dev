@@ -57,9 +57,9 @@ const Contact = () => {
           onSubmit={sendEmail}
           className="w-full max-w-lg bg-white p-10 rounded-2xl shadow-2xl transition-transform transform hover:scale-[1.01]"
         >
-          <h2 className="text-3xl font-extrabold mb-6 text-gray-800 text-center tracking-wide">
+          <h1 className="text-3xl font-extrabold mb-6 text-gray-800 text-center tracking-wide">
             Contact Me
-          </h2>
+          </h1>
 
           <div className="mb-5">
             <label className="block text-gray-700 font-medium mb-2">Name</label>
