@@ -16,17 +16,17 @@ function Blog() {
         {/* Meta Description */}
         <meta
           name="description"
-          content="KS MohanaDev-Frontenddeveloper,Explore the frontend development journey of Mohana Priyan — specializing in React.js, Tailwind CSS, TypeScript,Mohana.Dev, and UI/UX web experiences."
+          content="Mohana priyan K,Mohana Priyan K Portfolio,KS MohanaDev-Frontenddeveloper,Explore the frontend development journey of Mohana Priyan — specializing in React.js, Tailwind CSS, TypeScript,Mohana.Dev, and UI/UX web experiences."
         />
 
         {/* Keywords */}
         <meta
           name="keywords"
-          content="KS MohanaDev-Frontenddeveloper,Mohana Priyan, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
+          content="Mohana priyan K,Mohana Priyan K Portfolio,KS MohanaDev-Frontenddeveloper,Mohana Priyan, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
         />
         <meta
           name="keywords"
-          content="KS MohanaDev-Frontenddeveloper,MohanaPriyanUi, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
+          content="Mohana priyan K,Mohana Priyan K Portfolio,KS MohanaDev-Frontenddeveloper,MohanaPriyanUi, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
         />
 
         {/* Author */}

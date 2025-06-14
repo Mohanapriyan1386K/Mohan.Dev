@@ -31,17 +31,17 @@ function About() {
   {/* Meta Description */}
   <meta
     name="description"
-    content="KS MohanaDev-Frontenddeveloper,Explore the frontend development journey of Mohana Priyan — specializing in React.js, Tailwind CSS, TypeScript, and UI/UX web experiences."
+    content="Mohana Priyan K Portfolio,KS MohanaDev-Frontenddeveloper,Mohana priyan,Mohana priyan K ,Explore the frontend development journey of Mohana Priyan — specializing in React.js, Tailwind CSS, TypeScript, and UI/UX web experiences."
   />
 
   {/* Keywords */}
   <meta
     name="keywords"
-    content=" KS MohanaDev-Frontenddeveloper, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
+    content=" Mohana priyan K,Mohana Priyan K Portfolio,KS MohanaDev-Frontenddeveloper, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
   />
    <meta
     name="keywords"
-    content="MohanaPriyanUi, KS MohanaDev-Frontenddeveloper,Frontend Developer, React, Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
+    content=" Mohana priyan K,Mohana Priyan K Portfolio,MohanaPriyanUi, KS MohanaDev-Frontenddeveloper,Frontend Developer, React, Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
   />
 
   {/* Author */}
