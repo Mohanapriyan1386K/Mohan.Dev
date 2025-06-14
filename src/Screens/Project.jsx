@@ -41,6 +41,27 @@ const projects = [
 
 const Project = () => {
   return (
+    <>
+    <Helmet>
+        <title>About | Mohana Priyan - Frontend Developer</title>
+        <meta
+          name="description"
+          content="I’m Mohana Priyan, a passionate frontend developer creating responsive and interactive web applications using React, Tailwind CSS, TypeScript, and more."
+        />
+        <meta
+          name="keywords"
+          content="Mohana Priyan, Frontend Developer, React.js, Portfolio, Web Developer, JavaScript, Tailwind CSS, TypeScript"
+        />
+        <meta name="author" content="Mohana Priyan" />
+
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Mohana Priyan - About Me" />
+        <meta
+          property="og:description"
+          content="Learn more about Mohana Priyan – a skilled frontend developer with a passion for UI/UX and modern web technologies."
+        />
+      </Helmet>
+
     <section className="py-16 px-6 text-black" id="projects">
       <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -80,6 +101,7 @@ const Project = () => {
         ))}
       </div>
     </section>
+        </>
   );
 };
 

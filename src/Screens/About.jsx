@@ -25,45 +25,33 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>About | Mohana Priyan - Frontend Developer</title>
-        <meta
-          name="description"
-          content="I’m Mohana Priyan, a passionate frontend developer creating responsive and interactive web applications using React, Tailwind CSS, TypeScript, and more."
-        />
-        <meta
-          name="keywords"
-          content="Mohana Priyan, Frontend Developer, React.js, Portfolio, Web Developer, JavaScript, Tailwind CSS, TypeScript"
-        />
-        <meta name="author" content="Mohana Priyan" />
+  {/* Page Title */}
+  <title>About | Mohana Priyan - Frontend Developer Portfolio</title>
 
-        {/* Open Graph Tags */}
-        <meta property="og:title" content="Mohana Priyan - About Me" />
-        <meta
-          property="og:description"
-          content="Learn more about Mohana Priyan – a skilled frontend developer with a passion for UI/UX and modern web technologies."
-        />
-        <meta
-          property="og:image"
-          content="https://yourdomain.com/og-image.jpg"
-        />
-        <meta property="og:url" content="https://yourdomain.com/about" />
-        <meta property="og:type" content="website" />
+  {/* Meta Description */}
+  <meta
+    name="description"
+    content="Explore the frontend development journey of Mohana Priyan — specializing in React.js, Tailwind CSS, TypeScript, and UI/UX web experiences."
+  />
 
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Mohana Priyan - Frontend Developer"
-        />
-        <meta
-          name="twitter:description"
-          content="Explore the profile and skills of Mohana Priyan, a frontend developer."
-        />
-        <meta
-          name="twitter:image"
-          content="https://yourdomain.com/twitter-image.jpg"
-        />
-      </Helmet>
+  {/* Keywords */}
+  <meta
+    name="keywords"
+    content="Mohana Priyan, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
+  />
+   <meta
+    name="keywords"
+    content="MohanaPriyanUi, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
+  />
+
+  {/* Author */}
+  <meta name="author" content="Mohana Priyan" />
+
+  {/* Canonical URL */}
+  <link rel="canonical" href="https://mohan-dev-mauve.vercel.app/" />
+
+</Helmet>
+
 
       <div className="w-full">
         {/* Hero Section with Particles */}
