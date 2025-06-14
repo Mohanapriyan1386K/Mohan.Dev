@@ -11,26 +11,26 @@ function Blog() {
     <>
       <Helmet>
         {/* Page Title */}
-        <title>About | Mohana Priyan - Blogs</title>
+        <title>KS MohanaDev-Frontenddeveloper</title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Explore the frontend development journey of Mohana Priyan — specializing in React.js, Tailwind CSS, TypeScript, and UI/UX web experiences."
+          content="KS MohanaDev-Frontenddeveloper,Explore the frontend development journey of Mohana Priyan — specializing in React.js, Tailwind CSS, TypeScript,Mohana.Dev, and UI/UX web experiences."
         />
 
         {/* Keywords */}
         <meta
           name="keywords"
-          content="Mohana Priyan, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
+          content="KS MohanaDev-Frontenddeveloper,Mohana Priyan, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
         />
         <meta
           name="keywords"
-          content="MohanaPriyanUi, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
+          content="KS MohanaDev-Frontenddeveloper,MohanaPriyanUi, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
         />
 
         {/* Author */}
-        <meta name="author" content="Mohana Priyan" />
+        <meta name="author" content="Mohana Priyan,KS MohanaDev-Frontenddeveloper" />
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://mohan-dev-mauve.vercel.app/#/Project" />
