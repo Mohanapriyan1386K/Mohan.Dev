@@ -10,30 +10,16 @@ function Blog() {
   return (
     <>
       <Helmet>
-        {/* Page Title */}
-        <title>Blog-MohanaDev-Frontenddeveloper</title>
-
-        {/* Meta Description */}
+        <title>Blog | Mohana Priyan - Frontend Development Insights</title>
         <meta
           name="description"
-          content="Mohana priyan K,Mohana Priyan K Portfolio,KS MohanaDev-Frontenddeveloper,Explore the frontend development journey of Mohana Priyan — specializing in React.js, Tailwind CSS, TypeScript,Mohana.Dev, and UI/UX web experiences."
-        />
-
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="Mohana priyan K,Mohana Priyan K Portfolio,KS MohanaDev-Frontenddeveloper,Mohana Priyan, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
+          content="Read web development blogs by Mohana Priyan covering React.js, TypeScript, Tailwind CSS, JavaScript tips, UI design, and frontend trends."
         />
         <meta
           name="keywords"
-          content="Mohana priyan K,Mohana Priyan K Portfolio,KS MohanaDev-Frontenddeveloper,MohanaPriyanUi, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
+          content="Frontend Blog, Web Development Blog, React Articles, JavaScript Tips, TypeScript Tutorials, UI/UX Design, Mohana Priyan Blog"
         />
-
-        {/* Author */}
-        <meta name="author" content="Mohana Priyan,KS MohanaDev-Frontenddeveloper" />
-
-        {/* Canonical URL */}
-        <link rel="canonical" href="https://mohan-dev-mauve.vercel.app/#/Project" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <div className="p-6 ">

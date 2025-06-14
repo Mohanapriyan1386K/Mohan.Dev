@@ -12,7 +12,6 @@ import CountUp from "../Components/Animation/CountUp";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
-
 function About() {
   const Navigate = useNavigate();
   const handleAnimationComplete = () => {
@@ -25,33 +24,18 @@ function About() {
   return (
     <>
       <Helmet>
-  {/* Page Title */}
-  <title> About-KS-MohanaDev</title>
-
-  {/* Meta Description */}
-  <meta
-    name="description"
-    content="Mohana Priyan K Portfolio,KS MohanaDev-Frontenddeveloper,Mohana priyan,Mohana priyan K ,Explore the frontend development journey of Mohana Priyan — specializing in React.js, Tailwind CSS, TypeScript, and UI/UX web experiences."
-  />
-
-  {/* Keywords */}
-  <meta
-    name="keywords"
-    content=" Mohana priyan K,Mohana Priyan K Portfolio,KS MohanaDev-Frontenddeveloper, Frontend Developer, React Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
-  />
-   <meta
-    name="keywords"
-    content=" Mohana priyan K,Mohana Priyan K Portfolio,MohanaPriyanUi, KS MohanaDev-Frontenddeveloper,Frontend Developer, React, Developer, TypeScript, Tailwind CSS, UI Developer, Web Development Portfolio, JavaScript, HTML5, CSS3, MERN stack"
-  />
-
-  {/* Author */}
-  <meta name="author" content="Mohana Priyan,KS MohanaDev-Frontenddeveloper " />
-
-  {/* Canonical URL */}
-  <link rel="canonical" href="https://mohan-dev-mauve.vercel.app/" />
-
-</Helmet>
-
+        <title>About | Mohana Priyan - Frontend Developer</title>
+        <meta
+          name="description"
+          content="I'm Mohana Priyan, a dedicated Frontend Developer with expertise in React.js, JavaScript, HTML, CSS, and UI/UX design. Learn more about my journey and skills."
+        />
+        <meta
+          name="keywords"
+          content="About Mohana Priyan, Frontend Developer, React Developer, JavaScript Developer, Web Designer, UI Developer, Tailwind CSS, MERN Stack"
+        />
+        <meta name="author" content="Mohana Priyan" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
 
       <div className="w-full">
         {/* Hero Section with Particles */}
