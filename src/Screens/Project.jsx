@@ -13,7 +13,7 @@ const projects = [
    description:"Using react + typeScript using creating the this project Fake Api Using Data rendering the data  fetch and also using dynamic routing RestApi using Creating Curd operation",
    image:Ecom,
    previewLink:"https://ecom-coral-mu.vercel.app/",
-   githubLink:"https://github.com/Mohanapriyan1386K/Mohan.Dev"
+   githubLink:"https://github.com/Mohanapriyan1386K/Ecom"
   },
   {
     title: "CLINIBUY",
@@ -73,12 +73,12 @@ const Project = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-[#1e293b] rounded-2xl shadow-lg overflow-hidden hover:scale-105 transform transition-all duration-300"
+              className="bg-[#42464d] rounded-2xl shadow-lg overflow-hidden hover:scale-105 transform transition-all duration-300"
             >
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 p-5 "
               />
               <div className="p-5">
                 <h3 className="text-xl font-semibold mb-2 text-white">
@@ -100,7 +100,7 @@ const Project = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-600 px-4 py-2 rounded text-sm hover:bg-gray-700 transition"
+                    className="bg-white px-4 py-2 rounded text-sm  transition"
                   >
                     💻 Code
                   </a>
