@@ -1,6 +1,7 @@
 // components/Projects.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import Chatapp from "../assets/Projects/chat.png";
 import clincbuy from "../assets/Projects/clinibuy.png";
 import Tickpick from "../assets/Projects/Tickpick.png";
 import Airlinens from "../assets/Projects/Airlines.png";
@@ -8,6 +9,16 @@ import Ecom from "../assets/Projects/Ecom.png"
 import Agroly from "../assets/Projects/Agroly.png";
 import { Helmet } from "react-helmet";
 const projects = [
+  
+    
+  {
+   title:"Chat App",
+   description:"Using react +javacsript  using real time chat application Like clone of whatsapp",
+   image:Chatapp,
+   previewLink:"https://indian-chatsapp.vercel.app/",
+   githubLink:"https://github.com/Mohanapriyan1386K/Ecom"
+  },
+  
   {
    title:"Ecommerce",
    description:"Using react + typeScript using creating the this project Fake Api Using Data rendering the data  fetch and also using dynamic routing RestApi using Creating Curd operation",
