@@ -24,7 +24,7 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>About | Mohana Priyan - Frontend Developer</title>
+        <title>MohanaPriyan - FrontendDeveloper</title>
         <meta
           name="description"
           content=",I'm Mohana Priyan, a dedicated Frontend Developer with expertise in React.js, JavaScript, HTML, CSS, and UI/UX design. Learn more about my journey and skills."

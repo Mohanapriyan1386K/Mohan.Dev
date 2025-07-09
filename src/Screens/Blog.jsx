@@ -10,7 +10,7 @@ function Blog() {
   return (
     <>
       <Helmet>
-        <title>Blog | Mohana Priyan - Frontend Development Insights</title>
+        <title>Blog | MohanaPriyan k - Frontend Development Insights</title>
         <meta
           name="description"
           content="Read web development blogs by Mohana Priyan covering React.js, TypeScript, Tailwind CSS, JavaScript tips, UI design, and frontend trends,Mohanapriyan frontend developer"
