@@ -120,7 +120,7 @@ function About() {
                   </button>
                   <button className="bg-black text-white hover:bg-red-500 px-6 py-2 rounded-[10px] cursor-pointer hover:scale-105 transition font-bold w-full sm:w-auto">
                     <a
-                      href="https://drive.google.com/file/d/1pZMPbiGjjnXtAlDAtlb0UUt-aZhvCZZR/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1pzfstcCm8MDiX203JhT2naHoKbEpfRwH/view?usp=drive_link"
                       target="_blank"
                     >
                       DOWNLOAD CV
