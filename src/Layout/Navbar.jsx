@@ -24,6 +24,7 @@ import { Link, useLocation } from "react-router-dom";
 const pages = [
   { name: "ABOUT", link: "/" },
   { name: "PROJECT", link: "/Project" },
+  // { name: 'SERVICES', link: '/Services' },
   { name: "BLOG", link: "/Blog" },
   { name: "CONTACT", link: "/contact" },
 ];
