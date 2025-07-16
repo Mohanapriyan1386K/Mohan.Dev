@@ -1,5 +1,5 @@
 // src/Layout/Navbar.jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { images } from "../Utility/Images";
 import {
   AppBar,
@@ -17,21 +17,21 @@ import {
   useMediaQuery,
   Divider,
   Typography,
-} from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import { Link, useLocation } from 'react-router-dom';
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import { Link, useLocation } from "react-router-dom";
 
 const pages = [
-  { name: 'ABOUT', link: '/' },
-  { name: 'PROJECT', link: '/Project' },
+  { name: "ABOUT", link: "/" },
+  { name: "PROJECT", link: "/Project" },
   // { name: 'SERVICES', link: '/Services' },
-  { name: 'BLOG', link: '/Blog' },
-  { name: 'CONTACT', link: '/contact' },
+  { name: "BLOG", link: "/Blog" },
+  { name: "CONTACT", link: "/contact" },
 ];
 
 function NavBar() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const [drawerOpen, setDrawerOpen] = useState(false);
   const location = useLocation();
 
@@ -41,11 +41,15 @@ function NavBar() {
 
   return (
     <>
-      <AppBar position="sticky" elevation={3} sx={{ backgroundColor: '#fff', py: 0 }}>
+      <AppBar
+        position="sticky"
+        elevation={3}
+        sx={{ backgroundColor: "#fff", py: 0 }}
+      >
         <Container maxWidth="xl">
-          <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+          <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             {/* Logo */}
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
               <Button component={Link} to="/" sx={{ padding: 0 }}>
                 <Box
                   component="img"
@@ -53,7 +57,7 @@ function NavBar() {
                   alt="Logo"
                   sx={{
                     width: { xs: 120, sm: 150 },
-                    height: 'auto',
+                    height: "auto",
                   }}
                 />
               </Button>
@@ -61,7 +65,7 @@ function NavBar() {
 
             {/* Desktop Navigation */}
             {!isMobile ? (
-              <Box sx={{ display: 'flex', gap: 3, alignItems: 'center' }}>
+              <Box sx={{ display: "flex", gap: 3, alignItems: "center" }}>
                 {pages.map((page) => (
                   <Button
                     key={page.name}
@@ -69,20 +73,35 @@ function NavBar() {
                     to={page.link}
                     disableRipple
                     sx={{
-                      fontSize: '14px',
+                      position: "relative", // needed for ::after positioning
+                      fontSize: "14px",
                       fontWeight: 600,
-                      fontFamily: 'Poppins',
-                      color: isActive(page.link) ? '#000' : '#666',
+                      fontFamily: "Poppins",
+                      color: isActive(page.link) ? "#000" : "#666",
                       borderBottom: isActive(page.link)
-                        ? '2px solid #000'
-                        : '2px solid transparent',
-                      borderRadius: 0,
-                      paddingBottom: '6px',
-                      transition: 'all 0.3s ease-in-out',
-                      '&:hover': {
-                        color: '#000',
-                        borderBottom: '2px solid #000',
-                        backgroundColor: 'transparent',
+                        ? "2px solid #000"
+                        : "2px solid transparent",
+                      paddingBottom: "6px",
+                      transition: "color 0.3s ease-in-out",
+
+                      // underline element
+                      "&::after": {
+                        content: '""',
+                        position: "absolute",
+                        left: 0,
+                        bottom: 0,
+                        height: "2px",
+                        backgroundColor: "#000",
+                        width: 0, // start from 0
+                        transition: "width 0.3s ease-in-out",
+                      },
+
+                      // hover effect to grow line
+                      "&:hover": {
+                        color: "#000",
+                      },
+                      "&:hover::after": {
+                        width: "100%", // animate from 0 → 100%
                       },
                     }}
                   >
@@ -92,7 +111,7 @@ function NavBar() {
               </Box>
             ) : (
               <IconButton edge="end" onClick={handleDrawerToggle}>
-                <MenuIcon sx={{ color: 'black', fontSize: '28px' }} />
+                <MenuIcon sx={{ color: "black", fontSize: "28px" }} />
               </IconButton>
             )}
           </Toolbar>
@@ -104,11 +123,11 @@ function NavBar() {
         <Box
           sx={{
             width: 260,
-            display: 'flex',
-            flexDirection: 'column',
-            height: '100%',
+            display: "flex",
+            flexDirection: "column",
+            height: "100%",
             p: 2,
-            bgcolor: '#fff',
+            bgcolor: "#fff",
           }}
           role="presentation"
           onClick={handleDrawerToggle}
@@ -116,11 +135,11 @@ function NavBar() {
           <Typography
             variant="h6"
             sx={{
-              fontFamily: 'Poppins',
+              fontFamily: "Poppins",
               fontWeight: 700,
               mb: 2,
-              color: '#000',
-              textAlign: 'center',
+              color: "#000",
+              textAlign: "center",
             }}
           >
             MENU
@@ -135,21 +154,21 @@ function NavBar() {
                   selected={isActive(page.link)}
                   sx={{
                     px: 2,
-                    '&.Mui-selected': {
-                      backgroundColor: '#f5f5f5',
+                    "&.Mui-selected": {
+                      backgroundColor: "#f5f5f5",
                     },
-                    '&:hover': {
-                      backgroundColor: '#eee',
+                    "&:hover": {
+                      backgroundColor: "#eee",
                     },
                   }}
                 >
                   <ListItemText
                     primary={page.name}
                     primaryTypographyProps={{
-                      fontFamily: 'Poppins',
+                      fontFamily: "Poppins",
                       fontWeight: 600,
-                      fontSize: '14px',
-                      color: isActive(page.link) ? '#000' : '#555',
+                      fontSize: "14px",
+                      color: isActive(page.link) ? "#000" : "#555",
                     }}
                   />
                 </ListItemButton>
