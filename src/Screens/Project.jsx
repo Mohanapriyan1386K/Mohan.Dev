@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Chatapp from "../assets/Projects/chat.png";
-import clincbuy from "../assets/Projects/clinibuy.png";
+// import clincbuy from "../assets/Projects/clinibuy.png";
 import Tickpick from "../assets/Projects/Tickpick.png";
 import Airlinens from "../assets/Projects/Airlines.png";
 import Ecom from "../assets/Projects/Ecom.png"
@@ -26,13 +26,13 @@ const projects = [
    previewLink:"https://ecom-coral-mu.vercel.app/",
    githubLink:"https://github.com/Mohanapriyan1386K/Ecom"
   },
-  {
-    title: "CLINIBUY",
-    description: "Clinibuy app with product listings, cart, and payment.",
-    image: clincbuy,
-    previewLink: "https://medical-green-xi.vercel.app/#",
-    githubLink: "https://github.com/Mohanapriyan6559/Medical",
-  },
+  // {
+  //   title: "CLINIBUY",
+  //   description: "Clinibuy app with product listings, cart, and payment.",
+  //   image: clincbuy,
+  //   previewLink: "https://medical-green-xi.vercel.app/#",
+  //   githubLink: "https://github.com/Mohanapriyan6559/Medical",
+  // },
   {
     title: "Chatbot Assistant",
     description:
@@ -41,13 +41,13 @@ const projects = [
     previewLink: "https://finaltickapi-2pnysrrx2mapxmgmppenkh.streamlit.app/",
     githubLink: "https://github.com/Mohanapriyan6559/finaltickapi",
   },
-  {
-    title: "Air Lines",
-    description: "Flight Booking App Desgin Like using Html and css.",
-    image: Airlinens,
-    previewLink: "https://airlines-phi.vercel.app/index.html",
-    githubLink: "https://github.com/Mohanapriyan6559/Airlinecloneproject",
-  },
+  // {
+  //   title: "Air Lines",
+  //   description: "Flight Booking App Desgin Like using Html and css.",
+  //   image: Airlinens,
+  //   previewLink: "https://airlines-phi.vercel.app/index.html",
+  //   githubLink: "https://github.com/Mohanapriyan6559/Airlinecloneproject",
+  // },
   {
     title: "Former",
     description: "Formers App.",
