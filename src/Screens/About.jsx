@@ -96,7 +96,7 @@ function About() {
                 <h1 className="text-3xl  font-bold">I AM MOHANA PRIYAN K</h1>
 
                 <TrueFocus
-                  sentence="FRONT END DEVELOPER"
+                  sentence="MERN STACK DEVELOPER"
                   manualMode={false}
                   blurAmount={5}
                   borderColor="red"
@@ -120,7 +120,7 @@ function About() {
                   </button>
                   <button className="bg-black text-white hover:bg-red-500 px-6 py-2 rounded-[10px] cursor-pointer hover:scale-105 transition font-bold w-full sm:w-auto">
                     <a
-                      href="https://drive.google.com/file/d/19Z7Hp7KzHsX2Oinzik5V8dPZ9r8h021Y/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1jwn72KtkPI8y7sEznskaiZSfL7UWbdFk/view?usp=sharing"
                       target="_blank"
                     >
                       DOWNLOAD CV

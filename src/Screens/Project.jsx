@@ -2,37 +2,48 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Chatapp from "../assets/Projects/chat.png";
-// import clincbuy from "../assets/Projects/clinibuy.png";
 import Tickpick from "../assets/Projects/Tickpick.png";
-import Airlinens from "../assets/Projects/Airlines.png";
-import Ecom from "../assets/Projects/Ecom.png"
+import Ecom from "../assets/Projects/Ecom.png";
 import Agroly from "../assets/Projects/Agroly.png";
 import { Helmet } from "react-helmet";
+import explore from "../assets/Projects/ExploreCare.png";
+import Job from "../assets/Projects/Job.png";
+
 const projects = [
-  
-    
   {
-   title:"Chat App",
-   description:"Using react +javacsript  using real time chat application Like clone of whatsapp",
-   image:Chatapp,
-   previewLink:"https://indian-chatsapp.vercel.app/",
-   githubLink:"https://github.com/Mohanapriyan1386K/Ecom"
+    title: "Health Care",
+    description:
+      "Accessibility-focused healthcare web app designed in Figma and built with React + Tailwind CSS for smooth patient navigation.",
+    image: explore,
+    previewLink: "https://www.explorecarepricing.com/",
+    tech: ["React", "Tailwind", "Figma"],
   },
-  
   {
-   title:"Ecommerce",
-   description:"Using react + typeScript using creating the this project Fake Api Using Data rendering the data  fetch and also using dynamic routing RestApi using Creating Curd operation",
-   image:Ecom,
-   previewLink:"https://ecom-coral-mu.vercel.app/",
-   githubLink:"https://github.com/Mohanapriyan1386K/Ecom"
+    title: "Job Portal",
+    description:
+      "Role-based full-stack job portal with admin and user dashboards, job listings, and REST API integration.",
+    image: Job,
+    previewLink: "https://esayjobs.vercel.app/",
+    tech: ["React", "MUI", "REST API"],
   },
-  // {
-  //   title: "CLINIBUY",
-  //   description: "Clinibuy app with product listings, cart, and payment.",
-  //   image: clincbuy,
-  //   previewLink: "https://medical-green-xi.vercel.app/#",
-  //   githubLink: "https://github.com/Mohanapriyan6559/Medical",
-  // },
+  {
+    title: "Chat App",
+    description:
+      "Real-time chat application built with React and JavaScript, inspired by WhatsApp-style messaging.",
+    image: Chatapp,
+    previewLink: "https://indian-chatsapp.vercel.app/",
+    githubLink: "https://github.com/Mohanapriyan1386K/Ecom",
+    tech: ["React", "JavaScript", "Realtime"],
+  },
+  {
+    title: "Ecommerce",
+    description:
+      "TypeScript e-commerce app with fake API integration, dynamic routing, and full CRUD operations.",
+    image: Ecom,
+    previewLink: "https://ecom-coral-mu.vercel.app/",
+    githubLink: "https://github.com/Mohanapriyan1386K/Ecom",
+    tech: ["React", "TypeScript", "CRUD"],
+  },
   {
     title: "Chatbot Assistant",
     description:
@@ -40,22 +51,16 @@ const projects = [
     image: Tickpick,
     previewLink: "https://finaltickapi-2pnysrrx2mapxmgmppenkh.streamlit.app/",
     githubLink: "https://github.com/Mohanapriyan6559/finaltickapi",
+    tech: ["OpenAI API", "STT", "Voice"],
   },
-  // {
-  //   title: "Air Lines",
-  //   description: "Flight Booking App Desgin Like using Html and css.",
-  //   image: Airlinens,
-  //   previewLink: "https://airlines-phi.vercel.app/index.html",
-  //   githubLink: "https://github.com/Mohanapriyan6559/Airlinecloneproject",
-  // },
   {
-    title: "Former",
-    description: "Formers App.",
+    title: "Farmer App",
+    description: "Agriculture-focused platform with useful features for farmers.",
     image: Agroly,
     previewLink: "https://agroly.vercel.app/index.html",
     githubLink: "https://github.com/Mohanapriyan6559/Task",
+    tech: ["HTML", "CSS", "JavaScript"],
   },
-  // Add more projects here
 ];
 
 const Project = () => {
@@ -74,51 +79,84 @@ const Project = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
 
-      <section className="py-16 px-6 text-black" id="projects">
-        <h1 className="text-3xl font-bold text-center mb-12">My Projects</h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-[#42464d] rounded-2xl shadow-lg overflow-hidden hover:scale-105 transform transition-all duration-300"
-            >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 p-5 "
-              />
-              <div className="p-5">
-                <h3 className="text-xl font-semibold mb-2 text-white">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-gray-300 mb-4">
-                  {project.description}
-                </p>
-                <div className="flex gap-3">
-                  <a
-                    href={project.previewLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-blue-600 px-4 py-2 rounded text-sm hover:bg-blue-700 transition"
-                  >
-                    🔗 Preview
-                  </a>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white px-4 py-2 rounded text-sm  transition"
-                  >
-                    💻 Code
-                  </a>
+      <section
+        className="py-16 px-4 sm:px-6 lg:px-12 text-black bg-gradient-to-b from-white via-slate-50 to-white"
+        id="projects"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="inline-block bg-black text-white text-xs tracking-widest font-semibold px-3 py-1 rounded-full mb-4">
+              PORTFOLIO
+            </p>
+            <h1 className="text-3xl sm:text-4xl font-bold">Featured Projects</h1>
+            <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+              A selection of apps I designed and built with modern frontend and
+              full-stack technologies.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: index * 0.12 }}
+                className="group rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="relative h-52 bg-slate-100 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
-              </div>
-            </motion.div>
-          ))}
+
+                <div className="p-6 flex flex-col h-[260px]">
+                  <h3 className="text-xl font-semibold mb-2 text-slate-900">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-slate-600 mb-4 leading-6">
+                    {project.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {project.tech?.map((item, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-3 mt-auto">
+                    <a
+                      href={project.previewLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition"
+                    >
+                      Live Demo
+                    </a>
+                    {project.githubLink && (
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="border border-slate-300 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 transition"
+                      >
+                        Source Code
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
     </>

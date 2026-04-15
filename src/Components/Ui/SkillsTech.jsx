@@ -16,7 +16,7 @@ function SkillsTech() {
     {
       title: "Frameworks",
       icon: <Build style={{ fontSize: 40, color: "#0288d1" }} />,
-      items: ["React", "Next.js",],
+      items: ["React", "Next.js","Express Js","Node Js"],
     },
     {
       title: "Styling",
