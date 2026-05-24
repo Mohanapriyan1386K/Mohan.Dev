@@ -7,16 +7,26 @@ import Ecom from "../assets/Projects/Ecom.png";
 import Agroly from "../assets/Projects/Agroly.png";
 import { Helmet } from "react-helmet";
 import explore from "../assets/Projects/ExploreCare.png";
+import Allindiajobs from "../assets/Projects/AllIndiaJobs.png"
 import Job from "../assets/Projects/Job.png";
 
 const projects = [
+  {
+    title:"Blog Project",
+     description:
+      "Accessibility-focused Jobs Blogs Every will be esay to apply like jobs and Readt technical conteent.",
+    image:Allindiajobs,
+    previewLink: "https://www.allindiajobs.site/",
+    tech: ["Full Stack Application","Next Js", "Tailwind", "Node JS" ,"ExperssJS","MongoDb"],
+
+  },
   {
     title: "Health Care",
     description:
       "Accessibility-focused healthcare web app designed in Figma and built with React + Tailwind CSS for smooth patient navigation.",
     image: explore,
     previewLink: "https://www.explorecarepricing.com/",
-    tech: ["React", "Tailwind", "Figma"],
+    tech: ["React", "MUI", "Python","Fast Api"],
   },
   {
     title: "Job Portal",
@@ -24,7 +34,7 @@ const projects = [
       "Role-based full-stack job portal with admin and user dashboards, job listings, and REST API integration.",
     image: Job,
     previewLink: "https://esayjobs.vercel.app/",
-    tech: ["React", "MUI", "REST API"],
+    tech: ["Full Stack Application","React", "Tailwind", "Node JS" ,"ExperssJS","MongoDb"],
   },
   {
     title: "Chat App",
@@ -53,14 +63,7 @@ const projects = [
     githubLink: "https://github.com/Mohanapriyan6559/finaltickapi",
     tech: ["OpenAI API", "STT", "Voice"],
   },
-  {
-    title: "Farmer App",
-    description: "Agriculture-focused platform with useful features for farmers.",
-    image: Agroly,
-    previewLink: "https://agroly.vercel.app/index.html",
-    githubLink: "https://github.com/Mohanapriyan6559/Task",
-    tech: ["HTML", "CSS", "JavaScript"],
-  },
+ 
 ];
 
 const Project = () => {

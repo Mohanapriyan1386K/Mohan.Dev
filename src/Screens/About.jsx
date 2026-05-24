@@ -37,9 +37,9 @@ function About() {
         <meta name="robots" content="index, follow" />
       </Helmet>
 
-      <div className="w-full">
+      <div className="w-full ">
         {/* Hero Section with Particles */}
-        <div className="relative w-full max-h-screen overflow-hidden mt-0">
+        <div className="relative w-full max-h-3/4 overflow-hidden mt-0">
           {/* Particle Background */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -82,7 +82,16 @@ function About() {
               </div>
 
               {/* Text Section */}
-              <div className="max-w-2xl text-center md:text-left px-2">
+              <div className="max-w-2xl ">
+                <TrueFocus
+                  sentence="MERN STACK DEVELOPER"
+                  manualMode={false}
+                  blurAmount={5}
+                  borderColor="red"
+                  animationDuration={1}
+                  pauseBetweenAnimations={1}
+                />
+
                 {/* <h1>
                   <BlurText
                     text="I AM MOHANA PRIYAN"
@@ -93,22 +102,16 @@ function About() {
                     className="text-[20px] sm:text-2xl font-bold mb-3"
                   />
                 </h1> */}
-                <h1 className="text-3xl  font-bold">I AM MOHANA PRIYAN K</h1>
+                <h1 className="text-2xl  font-bold"> I AM MOHANA PRIYAN K</h1>
 
-                <TrueFocus
-                  sentence="MERN STACK DEVELOPER"
-                  manualMode={false}
-                  blurAmount={5}
-                  borderColor="red"
-                  animationDuration={1}
-                  pauseBetweenAnimations={1}
-                />
-
-                <p className="mt-4 text-black text-base sm:text-lg leading-relaxed">
-                  Hi, I’m Mohana Priyan — a passionate Frontend Developer with a
-                  knack for crafting clean, responsive, and user-friendly web
-                  interfaces. I love turning complex problems into simple,
-                  beautiful, and intuitive designs.
+                <p className="mt-4 text-black text-start  sm:text-sm leading-relaxed">
+                  MERN Stack Developer with real world experience building
+                  production applications across IoT, e-commerce, healthcare,
+                  and job portal domains. Skilled in MongoDB, Express.js,
+                  React.js, and Node.js with a focus on solid API design, clean
+                  database architecture, and UIs that feel intuitive. Looking to
+                  join a team where good engineering and thoughtful product
+                  thinking go hand in hand
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
@@ -164,7 +167,7 @@ function About() {
                 </div>
                 <hr />
                 {/* 3 */}
-                <div>
+                {/* <div>
                   <div>
                     <CountUp
                       from={0}
@@ -178,7 +181,7 @@ function About() {
                   </div>
 
                   <p className="font-serif font-bold  ">Client Satisfactions</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </motion.div>

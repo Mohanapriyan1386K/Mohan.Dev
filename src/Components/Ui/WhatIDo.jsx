@@ -25,7 +25,7 @@ function WhatIDo() {
   ];
 
   return (
-    <div className="bg-[#0d1117] py-16 px-4 md:px-20 ">
+    <div className="bg-[#0d1117] sm:mt-2 py-16 px-4 md:px-20 ">
       <h2 className="text-3xl font-bold text-white text-center mb-12">What I Do</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {items.map((item, index) => (
